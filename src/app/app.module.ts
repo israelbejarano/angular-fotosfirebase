@@ -18,6 +18,7 @@ import { APP_ROUTES } from './app.routes';
 
 // Services
 import { CargaImagenesService } from './services/carga-imagenes.service';
+import { NgDropFilesDirective } from './directives/ng-drop-files.directive';
 
 
 /**
@@ -32,6 +33,7 @@ import { CargaImagenesService } from './services/carga-imagenes.service';
     AppComponent,
     FotosComponent,
     CargaComponent,
+    NgDropFilesDirective,
   ],
   imports: [
     BrowserModule,
