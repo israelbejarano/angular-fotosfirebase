@@ -2,14 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FileItem } from '../../models/file-item';
 import { CargaImagenesService } from '../../services/carga-imagenes.service';
 
-/**
- *
- *
- * @export
- * @class CargaComponent
- * @implements {OnInit}
- * @author ibejarano
- */
 @Component({
   selector: 'app-carga',
   templateUrl: './carga.component.html',
@@ -29,8 +21,12 @@ export class CargaComponent implements OnInit {
     this._cargaImagenes.cargarImagenesFirebase(this.archivos);
   }
 
+  limpiarArchivos() {
+    this.archivos = [];
+  }
+
+  // this function show the event drop in console for understand drop event
   pruebaSobreElemento(event) {
     console.log(event);
   }
-
 }
