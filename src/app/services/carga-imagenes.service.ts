@@ -3,13 +3,6 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import * as firebase from 'firebase';
 import { FileItem } from '../models/file-item';
 
-/**
- *
- *
- * @export
- * @class CargaImagenesService
- * @author ibejarano
- */
 @Injectable({
   providedIn: 'root'
 })
